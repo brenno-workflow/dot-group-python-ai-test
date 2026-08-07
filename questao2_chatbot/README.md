@@ -165,6 +165,8 @@ O chatbot foi desenvolvido para execução em terminal, conforme solicitado na a
 
 ## Observações
 
+Embora o enunciado utilize o GPT-4 da OpenAI como exemplo de LLM, a solução foi implementada utilizando o Google Gemini, integrado ao LangChain, mantendo a mesma arquitetura e atendendo aos requisitos propostos para integração com um modelo de linguagem.
+
 O modelo Gemini utilizado pode possuir configurações internas de geração de texto. Em alguns modelos, parâmetros como `temperature` podem ser ignorados por utilizarem configurações de amostragem fixas, comportamento informado pela própria biblioteca durante a execução.
 
 Para utilizar outro modelo Gemini, basta alterar a variável `GEMINI_MODEL` no arquivo `.env`, sem necessidade de modificar o código-fonte.

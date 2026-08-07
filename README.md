@@ -1,8 +1,20 @@
 # Dot Group - Backend Python & AI Technical Challenge
 
-Este repositório contém minha solução para a avaliação técnica de Desenvolvedor Backend Python com foco em IA da Dot Group.
+Este repositório contém minha solução para a avaliação técnica da Dot Group para a vaga de **Desenvolvedor Backend Python com foco em IA**.
 
-O projeto está organizado por questão, separando a API, o chatbot com IA generativa e a busca semântica com embeddings/vector store.
+A solução foi desenvolvida utilizando boas práticas de desenvolvimento, organização de código e documentação. Cada questão foi implementada de forma independente para facilitar a execução, manutenção e avaliação do projeto.
+
+```md
+## Índice
+
+- [Tecnologias Utilizadas](#tecnologias-utilizadas)
+- [Estrutura do Projeto](#estrutura-parcial-do-projeto)
+- [Questão 1 — API REST](#questão-1--api-rest-com-django)
+- [Questão 2 — Chatbot com IA](#questão-2--chatbot-com-ia)
+- [Questão 3 — Busca Semântica](#questão-3--busca-semântica)
+- [Como Executar](#como-executar)
+- [Objetivo](#objetivo)
+```
 
 ## Tecnologias Utilizadas
 
@@ -63,6 +75,8 @@ Implementação de um chatbot utilizando:
 
 O chatbot responde perguntas sobre programação em Python utilizando um Large Language Model (LLM) integrado ao LangChain.
 
+**Observação:** Embora o enunciado utilize o GPT-4 da OpenAI como exemplo de LLM, a solução foi implementada utilizando o Google Gemini, integrado ao LangChain, mantendo a mesma arquitetura e atendendo aos requisitos propostos para integração com um modelo de linguagem.
+
 ---
 
 # Questão 3 — Busca Semântica
@@ -74,6 +88,8 @@ Implementação de um sistema de busca semântica utilizando:
 * FAISS
 
 Os documentos são convertidos em embeddings, armazenados em uma Vector Store e recuperados com base na similaridade semântica entre a consulta do usuário e os documentos indexados.
+
+---
 
 # Como Executar
 
@@ -111,6 +127,19 @@ source .venv/bin/activate
 
 ```bash
 pip install -r requirements.txt
+```
+
+---
+
+## 4. Configurar as variáveis de ambiente
+
+Crie um arquivo `.env` na raiz do projeto utilizando o `.env.example` como referência.
+
+Exemplo:
+
+```env
+GOOGLE_API_KEY=sua_chave_da_api
+GEMINI_MODEL=gemini-3.6-flash
 ```
 
 ---

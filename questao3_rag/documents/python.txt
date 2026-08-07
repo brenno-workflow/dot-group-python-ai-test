@@ -1,0 +1,4 @@
+Python é uma linguagem de programação de alto nível.
+Foi criada por Guido van Rossum.
+É amplamente utilizada em desenvolvimento web, ciência de dados, automação, inteligência artificiale machine learning.
+Sua sintaxe simples facilita o aprendizado.

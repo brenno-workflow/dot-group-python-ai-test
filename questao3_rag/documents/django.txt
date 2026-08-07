@@ -1,0 +1,5 @@
+Django é um framework web escrito em Python.
+Segue o padrão MTV.
+Possui ORM integrado.
+Facilita a criação de aplicações web robustas.
+Também oferece autenticação, painel administrativo e sistema de migrations.

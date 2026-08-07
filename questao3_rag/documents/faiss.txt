@@ -1,0 +1,3 @@
+FAISS é uma biblioteca desenvolvida pelo Facebook.
+Ela permite armazenar embeddings.
+Também realiza buscas por similaridade de maneira extremamente eficiente.
