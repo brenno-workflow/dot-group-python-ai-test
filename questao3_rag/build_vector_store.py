@@ -2,18 +2,13 @@ import os
 
 from pathlib import Path
 
-from dotenv import load_dotenv
 from langchain_community.document_loaders import DirectoryLoader
 from langchain_community.document_loaders import TextLoader
 from langchain_text_splitters import RecursiveCharacterTextSplitter
 from langchain_huggingface import HuggingFaceEmbeddings
 from langchain_community.vectorstores import FAISS
 
-# Carregar o .env
-load_dotenv()
-
 # Buscar variaveis
-API_KEY = os.getenv("GOOGLE_API_KEY")
 BASE_DIR = Path(__file__).resolve().parent
 DOCUMENTS_DIR = BASE_DIR / "documents"
 VECTOR_STORE_DIR = BASE_DIR / "vector_store"
@@ -27,12 +22,6 @@ def create_vector_store():
 
     # TryCath
     try:
-
-        print("Verificando se existe API...")
-
-        # Verificar API
-        if not API_KEY:
-            raise ValueError("A variável GOOGLE_API_KEY não foi encontrada no arquivo .env.")
 
         print("Carregando documentos...")
 

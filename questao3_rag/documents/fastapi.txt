@@ -1,4 +1,4 @@
-FastAPI é um framework moderno para criação de APIs REST.
+FastAPI é um framework moderno para criação de APIs REST em Python.
 É baseado em type hints.
 Possui documentação automática.
 É muito utilizado em aplicações de IA.

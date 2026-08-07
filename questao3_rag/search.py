@@ -2,17 +2,12 @@ import os
 
 from pathlib import Path
 
-from dotenv import load_dotenv
 from langchain_huggingface import HuggingFaceEmbeddings
 from langchain_community.vectorstores import FAISS
 
 from build_vector_store import create_vector_store
 
-# Carregar o .env
-load_dotenv()
-
 # Buscar variaveis
-API_KEY = os.getenv("GOOGLE_API_KEY")
 BASE_DIR = Path(__file__).resolve().parent
 VECTOR_STORE_DIR = BASE_DIR / "vector_store"
 FAISS_INDEX = "vector_store/index.faiss"
@@ -26,12 +21,6 @@ def main():
 
     # TryCath
     try:
-
-        print("Verificando se existe API...")
-        
-        # Verificar API
-        if not API_KEY:
-            raise ValueError("A variável GOOGLE_API_KEY não foi encontrada no arquivo .env.")
 
         print("Verificando se existe uma Vector Store...")
 

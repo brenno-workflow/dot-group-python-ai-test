@@ -13,6 +13,7 @@ A implementação está organizada em três projetos independentes, corresponden
 - [Questão 3 — Busca Semântica](#questão-3--busca-semântica)
 - [Como Executar](#como-executar)
 - [Objetivo](#objetivo)
+- [Considerações Finais](#considerações-finais)
 
 ## Tecnologias Utilizadas
 
@@ -43,7 +44,7 @@ Cada questão possui sua própria estrutura para facilitar a leitura, execução
 
 ---
 
-# Questão 1 — API REST com Django
+## Questão 1 — API REST com Django
 
 Implementação de uma API REST para gerenciamento de livros utilizando:
 
@@ -63,7 +64,7 @@ A documentação da API é disponibilizada utilizando os recursos do Django REST
 
 ---
 
-# Questão 2 — Chatbot com IA
+## Questão 2 — Chatbot com IA
 
 Implementação de um chatbot utilizando:
 
@@ -78,7 +79,7 @@ O chatbot responde perguntas sobre programação em Python utilizando um Large L
 
 ---
 
-# Questão 3 — Busca Semântica
+## Questão 3 — Busca Semântica
 
 Implementação de um sistema de busca semântica utilizando:
 
@@ -143,9 +144,7 @@ GOOGLE_API_KEY=sua_chave_da_api
 GEMINI_MODEL=gemini-3.6-flash
 ```
 
-```markdown
 O arquivo `.env.example` contém apenas a estrutura esperada.
-```
 
 Para executar a Questão 2 é necessário informar uma chave válida da Google Gemini API.
 
@@ -153,7 +152,7 @@ A Questão 3 utiliza um modelo local do Sentence Transformers para geração dos
 
 ---
 
-# Objetivo
+## Objetivo
 
 Este projeto foi desenvolvido exclusivamente para fins de avaliação técnica, demonstrando conhecimentos em:
 
