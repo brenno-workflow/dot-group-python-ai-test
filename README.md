@@ -26,6 +26,7 @@ dot-group-python-ai-test/
 ├── questao1_api/
 ├── questao2_chatbot/
 └── questao3_rag/
+```
 
 Cada questão possui sua própria estrutura para facilitar a leitura, execução e manutenção.
 
@@ -73,8 +74,6 @@ Implementação de um sistema de busca semântica utilizando:
 
 Os documentos são convertidos em embeddings, armazenados em uma Vector Store e recuperados por similaridade semântica.
 
----
-
 # Como Executar
 
 ## 1. Clonar o repositório
@@ -83,8 +82,6 @@ Os documentos são convertidos em embeddings, armazenados em uma Vector Store e 
 git clone <URL_DO_REPOSITORIO>
 cd dot-group-python-ai-test
 ```
-
----
 
 ## 2. Criar o ambiente virtual
 
