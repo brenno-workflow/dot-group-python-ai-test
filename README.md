@@ -2,9 +2,8 @@
 
 Este repositório contém minha solução para a avaliação técnica da Dot Group para a vaga de **Desenvolvedor Backend Python com foco em IA**.
 
-A solução foi desenvolvida utilizando boas práticas de desenvolvimento, organização de código e documentação. Cada questão foi implementada de forma independente para facilitar a execução, manutenção e avaliação do projeto.
+A implementação está organizada em três projetos independentes, correspondentes às questões propostas na avaliação. Cada projeto possui documentação própria contendo instruções de instalação, execução e detalhes sobre as decisões técnicas adotadas.
 
-```md
 ## Índice
 
 - [Tecnologias Utilizadas](#tecnologias-utilizadas)
@@ -14,7 +13,6 @@ A solução foi desenvolvida utilizando boas práticas de desenvolvimento, organ
 - [Questão 3 — Busca Semântica](#questão-3--busca-semântica)
 - [Como Executar](#como-executar)
 - [Objetivo](#objetivo)
-```
 
 ## Tecnologias Utilizadas
 
@@ -24,6 +22,7 @@ A solução foi desenvolvida utilizando boas práticas de desenvolvimento, organ
 - SQLite
 - LangChain
 - Google Gemini API
+- Sentence Transformers
 - FAISS
 
 ## Estrutura Parcial do Projeto
@@ -83,11 +82,13 @@ O chatbot responde perguntas sobre programação em Python utilizando um Large L
 
 Implementação de um sistema de busca semântica utilizando:
 
-* LangChain
+* Sentence Transformers
 * Embeddings
 * FAISS
 
 Os documentos são convertidos em embeddings, armazenados em uma Vector Store e recuperados com base na similaridade semântica entre a consulta do usuário e os documentos indexados.
+
+Caso o índice ainda não exista, ele é criado automaticamente durante a primeira execução da aplicação.
 
 ---
 
@@ -142,6 +143,13 @@ GOOGLE_API_KEY=sua_chave_da_api
 GEMINI_MODEL=gemini-3.6-flash
 ```
 
+```markdown
+O arquivo `.env.example` contém apenas a estrutura esperada.
+
+Para executar a Questão 2 é necessário informar uma chave válida da Google Gemini API.
+
+A Questão 3 utiliza um modelo local do Sentence Transformers para geração dos embeddings, não exigindo chave de API para essa etapa.
+
 ---
 
 # Objetivo
@@ -157,3 +165,9 @@ Este projeto foi desenvolvido exclusivamente para fins de avaliação técnica, 
 * Embeddings
 * Vector Stores
 * Organização de projetos e boas práticas de desenvolvimento
+
+## Considerações Finais
+
+A solução foi desenvolvida priorizando organização, legibilidade e boas práticas de desenvolvimento, mantendo cada questão independente e documentada.
+
+Todos os projetos podem ser executados individualmente e possuem instruções específicas em seus respectivos arquivos README.
