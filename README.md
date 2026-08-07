@@ -11,7 +11,7 @@ O projeto está organizado por questão, separando a API, o chatbot com IA gener
 - Django REST Framework
 - SQLite
 - LangChain
-- OpenAI API
+- Google Gemini API
 - FAISS
 
 ## Estrutura Parcial do Projeto
@@ -57,10 +57,11 @@ A documentação da API é disponibilizada utilizando os recursos do Django REST
 Implementação de um chatbot utilizando:
 
 * LangChain
-* OpenAI
+* Google Gemini
 * Prompt Templates
+* Python Dotenv
 
-O chatbot responde perguntas sobre programação em Python utilizando um modelo de linguagem (LLM).
+O chatbot responde perguntas sobre programação em Python utilizando um Large Language Model (LLM) integrado ao LangChain.
 
 ---
 
@@ -68,11 +69,11 @@ O chatbot responde perguntas sobre programação em Python utilizando um modelo 
 
 Implementação de um sistema de busca semântica utilizando:
 
+* LangChain
 * Embeddings
 * FAISS
-* LangChain
 
-Os documentos são convertidos em embeddings, armazenados em uma Vector Store e recuperados por similaridade semântica.
+Os documentos são convertidos em embeddings, armazenados em uma Vector Store e recuperados com base na similaridade semântica entre a consulta do usuário e os documentos indexados.
 
 # Como Executar
 
