@@ -145,6 +145,7 @@ GEMINI_MODEL=gemini-3.6-flash
 
 ```markdown
 O arquivo `.env.example` contém apenas a estrutura esperada.
+```
 
 Para executar a Questão 2 é necessário informar uma chave válida da Google Gemini API.
 
@@ -165,6 +166,8 @@ Este projeto foi desenvolvido exclusivamente para fins de avaliação técnica, 
 * Embeddings
 * Vector Stores
 * Organização de projetos e boas práticas de desenvolvimento
+
+---
 
 ## Considerações Finais
 
